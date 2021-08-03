@@ -5,7 +5,7 @@
   "description": "A Vite2.x + Vue3 + TypeScript LowCode",
   "scripts": {
     "dev": "cross-env --max_old_space_size=4096 vite",
-    "build": "cross-env vite build",
+    "build": "node --max_old_space_size cross-env vite build",
     "build-tsc": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
     "deploy": "gh-pages -d dist",
